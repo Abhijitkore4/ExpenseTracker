@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Expense Tracker</h1>
+    <div class="obox" id="box1">
+    <h3 class="box">Account Balance</h3>
+    <h3 class="box" id="balance">0</h3>
+    </div>
+    <div class="obox incomeexpense" id="box2">
+    <h3 class="box">Total Income</h3>
+    <h3 class="box" id="income">0</h3>
+    <!-- </div>
+    <div class="obox incomeexpense" id="box3"> -->
+        <h3 class="box">Total Expenses</h3>
+    <h3 class="box" id="expense">0</h3>
+    </div>
+
+    <div id="amountcontainer">
+        <input type="number" class="inputdetails" id="amount" placeholder="Amount" required>
+    </div>
+    <div id="datecontainer">
+
+        <input type="date" class="inputdetails" id="date" required>
+    </div>
+    <div id="purposecontainer">
+
+        <input type="text" class="inputdetails" id="purpose" placeholder="Description" required>
+    </div>
+    <button class="btn" onclick="creditAction()">Credit</button>
+    <button class="btn" onclick="debitAction()">Debit</button>
+    <button class="btn" onclick="historyAction()">History</button>
+
+    <!-- <button class="btn" onclick="showtransection()">Show Transections</button> -->
+
+</div>
+<div id="historycontainer">
+    <h3 class="historybox">TRANSECTION HISTORY</h3>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
